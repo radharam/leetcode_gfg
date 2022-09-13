@@ -50,3 +50,10 @@ class Solution {
         return rbytes == 0;
     }
 }
+
+
+/*
+    Complexity: 
+    * TC: O(N)
+    * SC: O(1)
+*/
