@@ -16,12 +16,18 @@
 class Solution {
     public boolean hasPathSum(TreeNode root, int targetSum) {
         if(root == null) return false;
-        if(root.left == null && root.right == null 
-                        && targetSum == root.val) {
-            return true;
         
+        return checkPathSum(root, targetSum, 0);
+    }
+    
+    public boolean checkPathSum(TreeNode root, int targetSum, int pathSum) {
+        if(root == null) return false;
+        if(root.left == null && root.right == null 
+                        && targetSum == pathSum + root.val) {
+            return true;
         } 
         
-        return hasPathSum(root.left, targetSum-root.val) || hasPathSum(root.right, targetSum-root.val);
+        return checkPathSum(root.left, targetSum, pathSum + root.val) ||
+                checkPathSum(root.right, targetSum, pathSum + root.val);
     }
 }
