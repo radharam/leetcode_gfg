@@ -1,3 +1,9 @@
+
+/*
+    https://leetcode.com/problems/time-based-key-value-store/discuss/2668411/Three-Solutions-%3A-HashMap-or-TreeMap-or-Binary-Search
+
+*/
+
 class TimeMap {
     
     TreeMap <String, TreeMap<Integer,String>> map;
