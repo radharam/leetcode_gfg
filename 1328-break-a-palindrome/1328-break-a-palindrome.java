@@ -9,10 +9,12 @@ class Solution {
         if (palindrome.length() == 1) {
             return "";
         }
+        
         char[] chars = palindrome.toCharArray();
         if(!canBreak(chars)) {
             chars[chars.length -1] = 'b';
         }
+        
         return new String(chars);
     }
     
@@ -23,6 +25,7 @@ class Solution {
                 return true;
             }
         }
+        
         return false;
     }
 }
