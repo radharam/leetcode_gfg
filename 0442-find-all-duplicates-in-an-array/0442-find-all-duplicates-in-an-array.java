@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/find-all-duplicates-in-an-array/discuss/1505522/Java-Linear-time-solution-with-a-hashset-trick-O(1)-Auxiliary-Space
+
 class Solution {
     public List<Integer> findDuplicates(int[] nums) {
         List<Integer> res = new ArrayList<>();
