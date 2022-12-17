@@ -41,7 +41,8 @@ class Compute {
         int maxVal = arr[0];
         
         for(int x = 1; x < n; x++){
-            maxVal = Math.max(maxVal, arr[x]);
+            //maxVal = Math.max(maxVal, arr[x]);
+            if(maxVal < arr[x]) maxVal = arr[x];
         }
         
         return maxVal;
